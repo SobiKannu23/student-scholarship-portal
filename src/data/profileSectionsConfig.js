@@ -1,0 +1,96 @@
+export const sectionsConfig = [
+  {
+    key: "personal",
+    label: "Personal Details",
+    description: "Basic identity and contact information.",
+    fields: [
+      { name: "fullName", label: "Full Name", type: "text" },
+      { name: "dateOfBirth", label: "Date of Birth", type: "date" },
+      { name: "gender", label: "Gender", type: "select", options: ["Male", "Female", "Other"] },
+      { name: "phone", label: "Phone Number", type: "text" },
+    ],
+  },
+  {
+    key: "academic",
+    label: "Academic Details",
+    description: "Your current college and course information.",
+    fields: [
+      { name: "college", label: "College Name", type: "text" },
+      { name: "department", label: "Department", type: "text" },
+      { name: "course", label: "Course", type: "text" },
+      {
+        name: "yearOfStudy",
+        label: "Year of Study",
+        type: "select",
+        options: ["1st Year", "2nd Year", "3rd Year", "4th Year"],
+      },
+      { name: "admissionYear", label: "Admission Year", type: "text" },
+      { name: "rollNumber", label: "Roll Number", type: "text" },
+      { name: "cgpa", label: "CGPA", type: "text" },
+    ],
+  },
+  {
+    key: "family",
+    label: "Family / Income Details",
+    description: "Parent/guardian and household income information.",
+    fields: [
+      { name: "fatherName", label: "Father's Name", type: "text" },
+      { name: "motherName", label: "Mother's Name", type: "text" },
+      { name: "guardianOccupation", label: "Guardian's Occupation", type: "text" },
+      { name: "annualIncome", label: "Annual Family Income (Rs.)", type: "text" },
+      { name: "numberOfSiblings", label: "Number of Siblings", type: "text" },
+    ],
+  },
+  {
+    key: "category",
+    label: "Category / Community Details",
+    description: "Community and religion details used for eligibility screening.",
+    fields: [
+      {
+        name: "community",
+        label: "Community",
+        type: "select",
+        options: ["OC", "BC", "BCM", "MBC", "SC", "SCA", "ST"],
+      },
+      { name: "religion", label: "Religion", type: "text" },
+      { name: "isMinority", label: "Minority Status", type: "select", options: ["Yes", "No"] },
+    ],
+  },
+  {
+    key: "disability",
+    label: "Disability Details",
+    description: "Applicable only if you have a certified disability.",
+    fields: [
+      { name: "hasDisability", label: "Do you have a disability?", type: "select", options: ["Yes", "No"] },
+      { name: "disabilityType", label: "Type of Disability", type: "text" },
+      { name: "disabilityPercentage", label: "Disability Percentage (%)", type: "text" },
+    ],
+  },
+  {
+    key: "location",
+    label: "Location / Residence Details",
+    description: "Your permanent residential address.",
+    fields: [
+      { name: "doorNo", label: "Door No.", type: "text" },
+      { name: "street", label: "Street", type: "text" },
+      { name: "village", label: "Village / Town", type: "text" },
+      { name: "taluk", label: "Taluk", type: "text" },
+      { name: "district", label: "District", type: "text" },
+      { name: "state", label: "State", type: "text" },
+      { name: "pincode", label: "Pincode", type: "text" },
+      { name: "residenceType", label: "Residence Type", type: "select", options: ["Urban", "Rural"] },
+    ],
+  },
+  {
+    key: "bank",
+    label: "Bank Details",
+    description: "Used for scholarship fund disbursement.",
+    fields: [
+      { name: "accountHolderName", label: "Account Holder Name", type: "text" },
+      { name: "bankName", label: "Bank Name", type: "text" },
+      { name: "accountNumber", label: "Account Number", type: "text" },
+      { name: "ifscCode", label: "IFSC Code", type: "text" },
+      { name: "branch", label: "Branch Name", type: "text" },
+    ],
+  },
+];

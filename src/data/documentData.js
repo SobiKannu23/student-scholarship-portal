@@ -1,0 +1,67 @@
+// Mock documents per student, keyed by user ID. Dates are ISO strings (YYYY-MM-DD).
+// Status is never stored here — it is always derived at runtime from expiryDate
+// via documentStatus.js, so it's automatically correct no matter when the app is opened.
+export const studentDocuments = {
+  STU1001: [
+    {
+      id: "DOC001",
+      name: "Community Certificate",
+      type: "Identity / Community Proof",
+      documentNumber: "TN-CC-2024-88213",
+      issuingAuthority: "Tahsildar Office, Salem",
+      issueDate: "2024-01-15",
+      expiryDate: "2029-01-15",
+      description: "Certifies the applicant's community category for scholarship eligibility.",
+    },
+    {
+      id: "DOC002",
+      name: "Income Certificate",
+      type: "Financial Proof",
+      documentNumber: "TN-IC-2025-40217",
+      issuingAuthority: "Revenue Department, Salem District",
+      issueDate: "2025-09-01",
+      expiryDate: "2026-09-01",
+      description: "Certifies annual family income, valid for one year from issue date.",
+    },
+    {
+      id: "DOC003",
+      name: "Aadhaar Card",
+      type: "Identity Proof",
+      documentNumber: "XXXX-XXXX-4521",
+      issuingAuthority: "Unique Identification Authority of India",
+      issueDate: "2019-04-10",
+      expiryDate: "2034-04-10",
+      description: "Government-issued biometric identity document.",
+    },
+    {
+      id: "DOC004",
+      name: "College Bonafide Certificate",
+      type: "Academic Proof",
+      documentNumber: "GCE-BC-2025-0092",
+      issuingAuthority: "Government College of Engineering, Salem",
+      issueDate: "2025-06-01",
+      expiryDate: "2026-06-01",
+      description: "Confirms current enrollment status, renewed each academic year.",
+    },
+    {
+      id: "DOC005",
+      name: "Bank Passbook Copy",
+      type: "Financial Proof",
+      documentNumber: "IB-6547893210",
+      issuingAuthority: "Indian Bank, Salem Main Branch",
+      issueDate: "2023-07-20",
+      expiryDate: "2033-07-20",
+      description: "Used to verify the bank account for scholarship fund disbursement.",
+    },
+    {
+      id: "DOC006",
+      name: "Previous Year Marksheet",
+      type: "Academic Proof",
+      documentNumber: "TN-HSC-2024-77410",
+      issuingAuthority: "Directorate of Government Examinations, Tamil Nadu",
+      issueDate: "2024-05-20",
+      expiryDate: "2026-09-10",
+      description: "Marksheet of the most recently completed academic year.",
+    },
+  ],
+};
