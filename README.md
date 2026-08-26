@@ -31,7 +31,7 @@ This project was built incrementally as a portfolio/learning project covering au
 
 ## Tech Stack
 
-- React.js (JavaScript, no TypeScript)
+- React.js (JavaScript)
 - React Router
 - Tailwind CSS
 - Axios (mock API layer)
@@ -42,7 +42,7 @@ This project was built incrementally as a portfolio/learning project covering au
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
+git clone <https://github.com/SobiKannu23/student-scholarship-portal.git>
 cd student-scholarship-portal
 
 # 2. Install dependencies
